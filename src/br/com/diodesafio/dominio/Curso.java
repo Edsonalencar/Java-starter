@@ -3,8 +3,7 @@ package br.com.diodesafio.dominio;
 import java.time.LocalDate;
 
 public class Curso extends  Conteudo {
-    private LocalDate dateMentory;
-
+    private Integer workload;
     public Curso() {
     }
 
@@ -16,14 +15,14 @@ public class Curso extends  Conteudo {
     public Curso(String title, String description, LocalDate dateMentory) {
         setTitle(title);
         setDescription(description);
-        this.dateMentory = dateMentory;
     }
 
-    public LocalDate getDateMentory() {
-        return dateMentory;
+    public Integer getWorkload() {
+        return workload;
     }
-    public void setDateMentory(LocalDate dateMentory) {
-        this.dateMentory = dateMentory;
+
+    public void setWorkload(Integer workload) {
+        this.workload = workload;
     }
 
     @Override
@@ -31,7 +30,7 @@ public class Curso extends  Conteudo {
         return "Curso{" +
                 "title='" + getTitle() + '\'' +
                 ", description='" + getDescription() + '\'' +
-                ", dateMentory=" + dateMentory +
+                ", workload=" + workload +
                 '}';
     }
 

@@ -1,8 +1,10 @@
 package br.com.diodesafio.dominio;
 
+import java.time.LocalDate;
+
 public class Mentoria extends  Conteudo {
     private Integer workload;
-
+    private LocalDate dateMentory;
     public Mentoria() {}
 
     public Mentoria(String title, String description) {
@@ -14,6 +16,14 @@ public class Mentoria extends  Conteudo {
         setTitle(title);
         setDescription(description);
         this.workload = workload;
+    }
+
+    public LocalDate getDateMentory() {
+        return dateMentory;
+    }
+
+    public void setDateMentory(LocalDate dateMentory) {
+        this.dateMentory = dateMentory;
     }
 
     public Integer getWorkload() {
