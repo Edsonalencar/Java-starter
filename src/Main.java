@@ -29,6 +29,8 @@ public class Main {
         dev1.nexting();
         dev1.xpTotalCalc();
         System.out.println("Cursos Concluidos " + dev1.getName() + " " + dev1.getEndingConteudos());
+        System.out.println("Cursos Restantes " + dev1.getName() + " " + dev1.getStartingConteudos());
+
 
         System.out.println("\n");
 
@@ -39,7 +41,10 @@ public class Main {
 
         dev2.nexting();
         dev2.nexting();
+        dev2.nexting();
         dev2.xpTotalCalc();
         System.out.println("Cursos Concluidos " + dev2.getName() + " " + dev2.getEndingConteudos());
+        System.out.println("Cursos Restantes " + dev2.getName() + " " + dev2.getStartingConteudos());
+
     }
 }
